@@ -81,7 +81,7 @@ header {
   top: 28px;
   width: 19.1px;
   height: 21.1px;
-  right: 147px;
+  right: 160px;
   gap: 10px;
   opacity: 0px;
   display: flex;
@@ -176,8 +176,8 @@ header {
 }
 
 #logout {
-  margin-top: 10px; /* Espaçamento entre Configurações e Sair */
-  border-top: 1px solid #39a048; /* Linha separadora */
+  margin-top: -150px;
+  border-top: 1px solid #39a048;
 }
 
 #logout-btn {
@@ -208,15 +208,15 @@ header {
 }
 
 main {
-  margin-left: 60px;
+  display: flex;
   justify-content: center;
   flex-wrap: wrap;
 }
 
 .container {
   margin-top: 120px;
-  margin-left: 150px;
   width: 997px;
+  align-items: center;
 }
 
 .top-main {
@@ -260,13 +260,13 @@ main {
   font-size: 35px;
   border: none;
   margin-bottom: 10px;
+  cursor: pointer;
 }
 
 .disciplinas {
   display: flex;
   flex-wrap: wrap;
   margin-top: 40px;
-  margin-left: 150px;
   width: 997px;
   justify-content: space-between;
 }
@@ -279,6 +279,7 @@ main {
   flex-direction: column;
   overflow: hidden;
   margin-bottom: 20px;
+  cursor: pointer;
 }
 
 .card img{
