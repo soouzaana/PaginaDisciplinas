@@ -2,7 +2,7 @@
 
 Este projeto consiste na implementação de uma tela a partir de um protótipo do Figma e Web.
 
-<p><img src="assets/PaginaDisciplinas.png"><br>Demonstração da tela</p>
+<p><img src="assets/TelaFinal.png"><br>Demonstração da tela</p>
 
 ## Tabela de Conteúdos
 
