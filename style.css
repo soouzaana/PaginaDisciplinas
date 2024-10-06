@@ -6,11 +6,13 @@
   box-sizing: border-box;
   font-family: Poppins;
 }
+
 body {
   font-family: Poppins;
   min-height: 100vh;
   display: flex;
 }
+
 header {
   z-index: 10;
   position: fixed;
@@ -20,6 +22,7 @@ header {
   height: 77px;
   box-shadow: 0px 0px 30px 0px #118d3b26;
 }
+
 .esquerda {
   color: black;
   margin-left: 0;
@@ -31,26 +34,31 @@ header {
   border-radius: 8px;
   opacity: 0px;
 }
+
 .esquerda span {
   font-size: 13px;
   font-weight: 600;
   line-height: 19.5px;
   text-align: left;
 }
+
 .esquerda span:last-child {
   font-size: 12px;
   line-height: 18px;
 }
+
 #user {
   display: flex;
   gap: 8px;
 }
+
 #userAvatar {
   position: absolute;
   left: 17px;
   top: 17px;
   align-self: center;
 }
+
 #img {
   position: absolute;
   width: 51px;
@@ -58,6 +66,7 @@ header {
   border-radius: 100%;
   background-color: #f0f0f0;
 }
+
 #infoUser {
   display: flex;
   flex-direction: column;
@@ -66,11 +75,7 @@ header {
   align-self: center;
   top: 15px;
 }
-#seta {
-  position: absolute;
-  top: 31px;
-  left: 152px;
-}
+
 #notificacao {
   position: absolute;
   top: 28px;
@@ -81,15 +86,18 @@ header {
   opacity: 0px;
   display: flex;
 }
+
 #logo {
   position: absolute;
   top: 25px;
   float: right;
   right: 20px;
 }
+
 #logo img {
   width: 120px;
 }
+
 #sidebar {
   position: fixed;
   top: 0;
@@ -166,12 +174,12 @@ header {
   opacity: 1;
   visibility: visible;
 }
-#configuracoes {
-  margin-bottom: -300px;
-}
+
 #logout {
-  border-top: 1px solid #39a048;
+  margin-top: 10px; /* Espaçamento entre Configurações e Sair */
+  border-top: 1px solid #39a048; /* Linha separadora */
 }
+
 #logout-btn {
   font-size: 13px;
   font-weight: 600;
@@ -186,11 +194,11 @@ header {
   background-color: transparent;
   color: #fff;
   padding: 0;
-  cursor: pointer;
   transition: background-color 0.3s, transform 0.3s;
   width: 237px;
   height: 40px;
 }
+
 #logout-btn img {
   margin-left: 5px;
 }
@@ -204,15 +212,18 @@ main {
   justify-content: center;
   flex-wrap: wrap;
 }
+
 .container {
   margin-top: 120px;
   margin-left: 150px;
   width: 997px;
 }
+
 .top-main {
   display: flex;
   justify-content: space-between;
 }
+
 .search-box {
   height: 47px;
   width: 490px;
@@ -220,12 +231,14 @@ main {
   border: 1.5px solid #9f9f9f;
   justify-content: space-between;
 }
+
 .pesquisar {
   padding: 11px;
   cursor: pointer;
   border: none;
   background-color: transparent;
 }
+
 .search-txt {
   border: none;
   background: none;
@@ -237,6 +250,7 @@ main {
   line-height: 40px;
   width: 450px;
 }
+
 .adicionar {
   width: 47px;
   height: 47px;
@@ -247,6 +261,7 @@ main {
   border: none;
   margin-bottom: 10px;
 }
+
 .disciplinas {
   display: flex;
   flex-wrap: wrap;
@@ -258,32 +273,41 @@ main {
 
 .card {
   width: calc(33.33% - 20px);
-  height: 260px;
   border: 1.5px solid #9f9f9f;
   border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
   margin-bottom: 20px;
 }
-.card img {
+
+.card img{
   width: 100%;
-  border-radius: 8px 8px 0 0;
+  height: 65%;
 }
 .card .texto {
+  flex-grow: 1;
   padding-left: 10px;
 }
+
 .card .elementos {
-  padding: 8px;
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  padding: 10px;
 }
+
 .card span {
   font-size: 16px;
   font-weight: 600;
 }
+
+.card .editar{
+  border: none;
+  background-color: transparent;
+}
+
 .card p {
   font-size: 12px;
   color: #afafaf;
-}
-.card .editar {
-  border: none;
-  background-color: transparent;
 }
