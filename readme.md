@@ -1,4 +1,4 @@
-# Desafio SISGHA
+# LISTAGEM DE DISCIPLINAS
 
 Este projeto consiste na implementação de uma tela a partir de um protótipo do Figma e Web.
 
