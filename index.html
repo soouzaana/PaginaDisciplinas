@@ -9,7 +9,7 @@
   <script src="script.js" defer></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">  
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
   <title>Disciplinas</title>
 </head>
 
@@ -101,14 +101,14 @@
       </div>
     </div>
   </nav>
-  
+
   <main>
     <div class="container">
       <div class="top-main">
         <!--Caixa de pesquisa começo-->
         <div class="form">
-          <input type="text" placeholder="Digite aqui" required>          
-          <label>Pesquisar</label>
+          <input type="text" placeholder="Digite aqui" id="input-id" required>
+          <label for="input-id" class= label">Pesquisar</label>
           <button class="pesquisar">
             <img src="/assets/Pesquisar.svg" alt="pesquisar">
           </button>
@@ -120,11 +120,46 @@
 
         <!--Modal começo-->
         <dialog>
-          <p>lore ipsum</p>
-          
-          <button class="close">Fechar</button>
+          <form class="forms">
+            <h1>Cadastrar Nova Disciplina</h1>
+            <div class="inputs">
+              <!--input de imagem início-->
+              <label class="picture" for="picture_input" tabindex="0">
+                <input type="file" accept="image/*" id="picture_input">
+                <img class="image" src="/assets/Imagem-Nova.svg" alt="imagemNova">
+                <span class="picure_image">Arraste e solte uma imagem ou escolha uma de até 500 KB .jpeg ou .png.</span>                
+              </label>
+              <!--input de imagem final-->
+
+              <div class="inserir">
+                <input type="text" placeholder="Digite aqui" id="input-name" required>
+              <label for="input-name" class="label">Nome</label>
+              </div>
+
+              <div class="inserir">
+                <input type="text" placeholder="Digite aqui" id="input-abreviado" required>
+              <label for="input-abreviado" class="label">Nome Abreviado</label>
+              </div>
+
+              <div class="inserir">
+                <input type="number" placeholder="Digite aqui" id="input-carga" required>
+              <label for="input-carga" class="label">Carga Horária</label>
+              </div>
+            </div>
+            <div class="botoes">
+              <button type="button" class="close">
+                Cancelar
+                <img class="icones" src="/assets/4115230-cancel-close-cross-delete_114048.svg" alt="cancelar">
+              </button>
+              <button type="submit" class="concluir">
+                Cadastrar
+                <img src="/assets/check_double_icon_206118.svg" alt="check">
+              </button>
+            </div>
+          </form>
         </dialog>
         <!--Modal final-->
+
 
         <!--Botão de adicionar final-->
       </div>
@@ -137,7 +172,7 @@
           <span>Artes</span>
           <button class="editar"><img src="/assets/Editar.svg" alt="icone editar"></button>
         </div>
-        <div class="texto">          
+        <div class="texto">
           <p>Carga Horária: 8 horas</p>
           <p>Abreviação: Art.</p>
         </div>
@@ -148,7 +183,7 @@
           <span>Geografia</span>
           <button class="editar"><img src="/assets/Editar.svg" alt="icone editar"></button>
         </div>
-        <div class="texto">          
+        <div class="texto">
           <p>Carga Horária: 67 horas</p>
           <p>Abreviação: Geografia</p>
         </div>
@@ -159,7 +194,7 @@
           <span>História</span>
           <button class="editar"><img src="/assets/Editar.svg" alt="icone editar"></button>
         </div>
-        <div class="texto">          
+        <div class="texto">
           <p>Carga Horária: 2 horas</p>
           <p>Abreviação: Hist.</p>
         </div>
@@ -170,7 +205,7 @@
           <span>Linguagem e Lógica de Programação</span>
           <button class="editar"><img src="/assets/Editar.svg" alt="icone editar"></button>
         </div>
-        <div class="texto">          
+        <div class="texto">
           <p>Carga Horária: 8 horas</p>
           <p>Abreviação: L. L. Prog.</p>
         </div>
@@ -181,7 +216,7 @@
           <span>Matemática</span>
           <button class="editar"><img src="/assets/Editar.svg" alt="icone editar"></button>
         </div>
-        <div class="texto">          
+        <div class="texto">
           <p>Carga Horária: 50 horas</p>
           <p>Abreviação: Mat.</p>
         </div>
@@ -192,7 +227,7 @@
           <span>Programação Orientada a Objetos</span>
           <button class="editar"><img src="/assets/Editar.svg" alt="icone editar"></button>
         </div>
-        <div class="texto">          
+        <div class="texto">
           <p>Carga Horária: 40 horas</p>
           <p>Abreviação: P. O. Obj.</p>
         </div>
@@ -202,4 +237,5 @@
     <script></script>
   </main>
 </body>
+
 </html>
