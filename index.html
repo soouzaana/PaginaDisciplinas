@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="shortcut icon" href="assets/favicon.ico">
+  <link rel="shortcut icon" href="assets/outros/favicon.ico">
   <link rel="stylesheet" href="style.css">
   <script src="script.js" defer></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -19,7 +19,7 @@
     <div class="esquerda">
       <div id="user">
         <div id="img">
-          <img id="userAvatar" src="/assets/ImagemPerfilFoto.svg" alt="foto">
+          <img id="userAvatar" src="/assets/header/ImagemPerfilFoto.svg" alt="foto">
         </div>
         <p id="infoUser">
           <span class="username">User Name</span>
@@ -29,10 +29,10 @@
     </div>
     <div class="direita">
       <a href="#" id="notificacao">
-        <img id="botaoNotificacao" src="/assets/Notificacao-Icone.svg" alt="notificacao">
+        <img id="botaoNotificacao" src="/assets/header/Notificacao-Icone.svg" alt="notificacao">
       </a>
       <a href="#" id="logo">
-        <img src="/assets/Logomarca-Vetor.svg" alt="Logo">
+        <img src="/assets/header/Logomarca-Vetor.svg" alt="Logo">
       </a>
     </div>
   </header>
@@ -44,43 +44,43 @@
       <ul id="side_items">
         <li class="side-item">
           <a href="#">
-            <img class="icone" src="/assets/Home.svg" alt="Inicio">
+            <img class="icone" src="/assets/sidebar/Home.svg" alt="Inicio">
             <span class="item-description">Início</span>
           </a>
         </li>
         <li class="side-item">
           <a href="#">
-            <img class="icone" src="/assets/Usuarios.svg" alt="usuarios">
+            <img class="icone" src="/assets/sidebar/Usuarios.svg" alt="usuarios">
             <span class="item-description">Turmas</span>
           </a>
         </li>
         <li class="side-item">
           <a href="#">
-            <img class="icone" src="/assets/Disciplina.svg" alt="disciplina">
+            <img class="icone" src="/assets/sidebar/Disciplina.svg" alt="disciplina">
             <span class="item-description">Disciplina</span>
           </a>
         </li>
         <li class="side-item">
           <a href="#">
-            <img class="icone" src="/assets/Usuario.svg" alt="usuario">
+            <img class="icone" src="/assets/sidebar/Usuario.svg" alt="usuario">
             <span class="item-description">Perfil</span>
           </a>
         </li>
         <li class="side-item">
           <a href="#">
-            <img class="icone" src="/assets/Diarios.svg" alt="diarios">
+            <img class="icone" src="/assets/sidebar/Diarios.svg" alt="diarios">
             <span class="item-description">Diários</span>
           </a>
         </li>
         <li class="side-item">
           <a href="#">
-            <img class="icone" src="/assets/Calendario.svg" alt="calendario">
+            <img class="icone" src="/assets/sidebar/Calendario.svg" alt="calendario">
             <span class="item-description">Calendário</span>
           </a>
         </li>
         <li class="side-item">
           <a href="#">
-            <img class="icone" src="/assets/Outros-Itens.svg" alt="outros">
+            <img class="icone" src="/assets/sidebar/Outros-Itens.svg" alt="outros">
             <span class="item-description">Outros</span>
           </a>
         </li>
@@ -89,13 +89,13 @@
     <div class="bottom">
       <div id="configuracoes" class="side-item">
         <a href="#">
-          <img class="icone" src="/assets/Configurações.svg" alt="configuracoes">
+          <img class="icone" src="/assets/sidebar/Configurações.svg" alt="configuracoes">
           <span class="item-description">Configurações</span>
         </a>
       </div>
       <div id="logout">
         <button id="logout-btn">
-          <img class="icone" src="/assets/Sair.svg" alt="sair">
+          <img class="icone" src="/assets/sidebar/Sair.svg" alt="sair">
           <span class="item-description">Sair</span>
         </button>
       </div>
@@ -108,9 +108,9 @@
         <!--Caixa de pesquisa começo-->
         <div class="form">
           <input type="text" placeholder="Digite aqui" id="input-id" required>
-          <label for="input-id" class= label">Pesquisar</label>
+          <label for="input-id" class=label">Pesquisar</label>
           <button class="pesquisar">
-            <img src="/assets/Pesquisar.svg" alt="pesquisar">
+            <img src="/assets/search/Pesquisar.svg" alt="pesquisar">
           </button>
         </div>
         <!--Caixa de pesquisa final-->
@@ -126,34 +126,34 @@
               <!--input de imagem início-->
               <label class="picture" for="picture_input" tabindex="0">
                 <input type="file" accept="image/*" id="picture_input">
-                <img class="image" src="/assets/Imagem-Nova.svg" alt="imagemNova">
-                <span class="picure_image">Arraste e solte uma imagem ou escolha uma de até 500 KB .jpeg ou .png.</span>                
+                <img class="image" src="/assets/modal/Imagem-Nova.svg" alt="imagemNova">
+                <span class="picure_image">Arraste e solte uma imagem ou escolha uma de até 500 KB .jpeg ou .png.</span>
               </label>
               <!--input de imagem final-->
 
               <div class="inserir">
                 <input type="text" placeholder="Digite aqui" id="input-name" required>
-              <label for="input-name" class="label">Nome</label>
+                <label for="input-name" class="label">Nome</label>
               </div>
 
               <div class="inserir">
                 <input type="text" placeholder="Digite aqui" id="input-abreviado" required>
-              <label for="input-abreviado" class="label">Nome Abreviado</label>
+                <label for="input-abreviado" class="label">Nome Abreviado</label>
               </div>
 
               <div class="inserir">
                 <input type="number" placeholder="Digite aqui" id="input-carga" required>
-              <label for="input-carga" class="label">Carga Horária</label>
+                <label for="input-carga" class="label">Carga Horária</label>
               </div>
             </div>
             <div class="botoes">
               <button type="button" class="close">
                 Cancelar
-                <img class="icones" src="/assets/4115230-cancel-close-cross-delete_114048.svg" alt="cancelar">
+                <img class="icones" src="/assets/modal/4115230-cancel-close-cross-delete_114048.svg" alt="cancelar">
               </button>
               <button type="submit" class="concluir">
                 Cadastrar
-                <img class="icones" src="/assets/check_double_icon_206118.svg" alt="check">
+                <img class="icones" src="/assets/modal/check_double_icon_206118.svg" alt="check">
               </button>
             </div>
           </form>
@@ -167,10 +167,10 @@
     <!--Disciplinas inicio-->
     <div class="disciplinas">
       <div class="card">
-        <img src="/assets/artes.jpg" alt="imagem artes">
+        <img src="/assets/disciplinas/artes.jpg" alt="imagem artes">
         <div class="elementos">
           <span>Artes</span>
-          <button class="editar"><img src="/assets/Editar.svg" alt="icone editar"></button>
+          <button class="editar"><img src="/assets/disciplinas/Editar.svg" alt="icone editar"></button>
         </div>
         <div class="texto">
           <p>Carga Horária: 8 horas</p>
@@ -178,10 +178,10 @@
         </div>
       </div>
       <div class="card">
-        <img src="/assets/geografia.jpg" alt="imagem geografia">
+        <img src="/assets/disciplinas/geografia.jpg" alt="imagem geografia">
         <div class="elementos">
           <span>Geografia</span>
-          <button class="editar"><img src="/assets/Editar.svg" alt="icone editar"></button>
+          <button class="editar"><img src="/assets/disciplinas/Editar.svg" alt="icone editar"></button>
         </div>
         <div class="texto">
           <p>Carga Horária: 67 horas</p>
@@ -189,10 +189,10 @@
         </div>
       </div>
       <div class="card">
-        <img src="/assets/historia.jpg" alt="imagem historia">
+        <img src="/assets/disciplinas/historia.jpg" alt="imagem historia">
         <div class="elementos">
           <span>História</span>
-          <button class="editar"><img src="/assets/Editar.svg" alt="icone editar"></button>
+          <button class="editar"><img src="/assets/disciplinas/Editar.svg" alt="icone editar"></button>
         </div>
         <div class="texto">
           <p>Carga Horária: 2 horas</p>
@@ -200,10 +200,10 @@
         </div>
       </div>
       <div class="card">
-        <img src="/assets/programacao.jpg" alt="imagem informática">
+        <img src="/assets/disciplinas/programacao.jpg" alt="imagem informática">
         <div class="elementos">
           <span>Linguagem e Lógica de Programação</span>
-          <button class="editar"><img src="/assets/Editar.svg" alt="icone editar"></button>
+          <button class="editar"><img src="/assets/disciplinas/Editar.svg" alt="icone editar"></button>
         </div>
         <div class="texto">
           <p>Carga Horária: 8 horas</p>
@@ -211,10 +211,10 @@
         </div>
       </div>
       <div class="card">
-        <img src="/assets/matematica.jpg" alt="imagem matematica">
+        <img src="/assets/disciplinas/matematica.jpg" alt="imagem matematica">
         <div class="elementos">
           <span>Matemática</span>
-          <button class="editar"><img src="/assets/Editar.svg" alt="icone editar"></button>
+          <button class="editar"><img src="/assets/disciplinas/Editar.svg" alt="icone editar"></button>
         </div>
         <div class="texto">
           <p>Carga Horária: 50 horas</p>
@@ -222,10 +222,10 @@
         </div>
       </div>
       <div class="card">
-        <img src="/assets/fas.jpg" alt="imagem informática">
+        <img src="/assets/disciplinas/fas.jpg" alt="imagem informática">
         <div class="elementos">
           <span>Programação Orientada a Objetos</span>
-          <button class="editar"><img src="/assets/Editar.svg" alt="icone editar"></button>
+          <button class="editar"><img src="/assets/disciplinas/Editar.svg" alt="icone editar"></button>
         </div>
         <div class="texto">
           <p>Carga Horária: 40 horas</p>
