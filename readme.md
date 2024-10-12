@@ -1,8 +1,9 @@
-# LISTAGEM DE DISCIPLINAS
+# Listagem de Disciplinas
 
 Este projeto consiste na implementação de uma tela a partir de um protótipo do Figma e Web.
 
 <p><img src="assets/outros/Tela.png"><br>Demonstração da tela</p>
+<p><img src="assets/outros/telaModal.png"><br>Demonstração do modal</p>
 
 ## Tabela de Conteúdos
 
