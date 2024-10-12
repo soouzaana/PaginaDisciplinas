@@ -382,6 +382,29 @@ main {
   background-color: #1bba47;
 }
 
+@keyframes modalIn {
+  from {
+    transform: translateX(100%) scale(0);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0) scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes modalOut {
+  from {
+    transform: translateX(0) scale(1);
+    opacity: 1; /* Visível */
+  }
+  to {
+    transform: translateX(100%) scale(0);
+    opacity: 0;
+  }
+}
+
+
 dialog::backdrop {
   background-color: rgba(24, 23, 23, 0.288);
   display: flex;
@@ -392,20 +415,33 @@ dialog::backdrop {
 dialog {
   border: 1.5px solid #9f9f9f;
   border-radius: 8px;
-  width: 30%;
-  height: 80%;
+  width: 35%;
+  height: auto;
+  max-height: 90%;
   margin: auto;
   background-color: #fff;
-  box-shadow: 0px 0px 33.5px 0px #050f071a;
-  padding: 10px;
-  overflow-y: auto;  
+  box-shadow: 0px 0px 33.5px 0px #050f0754;
+  padding: 20px;
+  flex-direction: column;
+  justify-content: space-between;  
+  animation: modalIn 0.5s forwards;
+}
+
+dialog[closing] {
+  animation: modalOut 0.5s forwards;
 }
 
 dialog h1 {
-  margin: 0px;
-  padding: 10px 0;
   font-size: 24px;
   text-align: center;
+}
+.forms {
+  margin: 20px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  gap: 20px;
+  overflow: hidden;
 }
 
 #picture_input {
@@ -413,45 +449,47 @@ dialog h1 {
 }
 
 .picture {
-  width: 87.61%;
   aspect-ratio: 16/9;
   display: flex;
   align-items: center;
   justify-content: center;
-  border: 1.5px solid #9f9f9f;
+  border: 1.7px solid #9f9f9f;
   border-radius: 8px;
   color: #9f9f9f;
-  font-family: Poppins;
-  font-size: 10.13px;
-  font-weight: 600;
-  line-height: 15.19px;
-  letter-spacing: 0.075em;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 20px;
   text-align: center;
   cursor: pointer;
-  padding: 10px;
+  padding: 35px;
   flex-direction: column;
   margin-bottom: 15px;
 }
 
-.picture img{
-  margin-bottom: 10px;
+.picture img {
+  margin-bottom: 20px;
+  height: 50px;
+  width: 50px;
 }
 
 .picture:hover {
-  background-color: #EAEAEA;
-  color: black;
+  background-color: #eaeaea;
+  color: black;  
+}
+
+.picture:hover img{
+  filter: brightness(0) saturate(100%) invert(0%) sepia(100%) saturate(2000%) hue-rotate(90deg) brightness(90%); 
 }
 .inputs {
-  overflow-y: auto;  
   flex-wrap: wrap;
-  width: 87.61%;
-  height: 87.61%;
-  justify-content: space-between;
+}
+
+.inputs input {
+  width: 100%;
 }
 
 .inserir {
   height: 10%;
-  width: 87.61%;
   position: relative;
   border-radius: 8px;
   margin-bottom: 20px;
@@ -459,14 +497,15 @@ dialog h1 {
 }
 
 .inserir input {
-  width: 100%;
   height: 100%;
   background: transparent;
   border-radius: 8px;
-  border: 1.5px solid #9f9f9f;
+  border: 1.7px solid #9f9f9f;
   outline: none;
-  padding: 0 10px;
+  padding: 12px;
   font-size: 12px;
+  font-weight: 600;
+  color: #afafaf;
   padding-left: 15px;
 }
 
@@ -491,19 +530,51 @@ dialog h1 {
 .inserir input:active + .label {
   color: #1bba47;
 }
-.botoes{
+
+.botoes {
   display: flex;
   justify-content: space-between;
+  text-align: center;
+  width: 100%;
 }
 
-.botoes button{
+.botoes button {
   background-color: transparent;
-  border: none;
   font-size: 14px;
+  border-radius: 8px;
+  padding: 5px 20px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.botoes img{
-  width: 15px;
-  height: 15px;
+.botoes img {
   margin-left: 5px;
+  height: 18px;
+  width: 18px;
+  vertical-align: middle;
+}
+
+.icones img {
+  position: absolute;
+  right: 0;
+  width: 15px;
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+}
+
+.close {
+  border: 1.7px solid black;
+}
+
+.concluir {
+  border: 1.7px solid #1bba47;
+  color: #1bba47;
+  font-weight: 600;
+}
+
+.concluir img {
+  filter: brightness(0) saturate(100%) invert(40%) sepia(100%) saturate(2000%) hue-rotate(90deg) brightness(90%);
 }
